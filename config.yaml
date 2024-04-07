@@ -1,0 +1,41 @@
+#运行模式,开发模式=debug,线上模式=release
+run_env: debug
+run_mod: debug
+# jwt configuration
+jwt:
+  signing-key: 'xuwuifwufggg'
+  expires-time: 36000
+  buffer-time: 36000
+  issuer: 'ihIOE3kf33E32D3OIX3s'
+# zap logger configuration
+zap:
+  level: 'info'
+  format: 'console'
+  prefix: '[app]'
+  director: 'log'
+  show-line: true
+  encode-level: 'LowercaseColorLevelEncoder'
+  stacktrace-key: 'stacktrace'
+  log-in-console: true
+# system_d configuration
+system:
+  env: 'public'
+  addr: 0.0.0.0:8888
+# captcha configuration
+captcha:
+  key-long: 6
+  img-width: 240
+  img-height: 80
+local:
+  uploadPath: 'd:\\uploads/file'
+mysql:
+  path: rm-dj1qv3mv3z0a2i53nlo.mysql.rds.aliyuncs.com
+  port: "3306"
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db-name: pwa
+  username: asdjhdsikqjw
+  password: QTJ5yqy8bjv_yej8nzy
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: error
+  log-zap: false
