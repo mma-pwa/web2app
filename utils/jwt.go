@@ -60,9 +60,9 @@ func (j *JWT) CreateTokenByOldToken(oldToken string, claims model.CustomClaims) 
 }
 
 func (j *JWT) ParseToken(tokenString string) (*model.CustomClaims, error, int) {
-	fmt.Println("**************解密前", tokenString)
+	//fmt.Println("**************解密前", tokenString)
 	tokenString = Tokendecrypt(tokenString, time.Now().Format(time.DateOnly))
-	fmt.Println("--------------解密后", tokenString)
+	//fmt.Println("--------------解密后", tokenString)
 	token, err := jwt.ParseWithClaims(tokenString, &model.CustomClaims{}, func(token *jwt.Token) (i interface{}, e error) {
 		return j.SigningKey, nil
 	})

@@ -2,6 +2,7 @@ package client
 
 import (
 	"errors"
+	"fmt"
 	"mime/multipart"
 	"web2app/global"
 	"web2app/model"
@@ -23,10 +24,10 @@ func (s *UpgradeService) UploadUpgradeFile(header *multipart.FileHeader, id, img
 	if uploadErr != nil {
 		return uploadErr, nil
 	}
-	if !utils.IsPNGImage(filePath) {
-		if !utils.IsJpgImage(filePath) {
-			return errors.New("必须是Png文件或者jpg"), nil
-		}
+	if !utils.IsPNGImage(filePath) && !utils.IsJpgImage(filePath) {
+		//if !utils.IsJpgImage(filePath) {
+		return errors.New("必须是Png文件或者jpg"), nil
+		//}
 	}
 
 	imgInfo = new(model.ImgInfo)
@@ -38,13 +39,14 @@ func (s *UpgradeService) UploadUpgradeFile(header *multipart.FileHeader, id, img
 			if err = utils.ImgScale(filePath, scaleImgFile, 512, 512); err != nil {
 				return err, nil
 			}
-			imgInfo.Url = "/img/" + id + "/" + dstName + global.BIG_ICON + ".png"
+			//imgInfo.Url = "/img/" + id + "/" + dstName + global.BIG_ICON + ".png"
 
 			scaleImgFile = imgPathFile + dstName + global.SMALL_ICON + ".png"
 			if err = utils.ImgScale(filePath, scaleImgFile, 192, 192); err != nil {
 				return err, nil
 			}
-			imgInfo.Url = "/img/" + id + "/" + dstName + global.SMALL_ICON + ".png"
+			imgInfo.Url = "/img/" + id + "/" + dstName + ".png"
+			utils.CopyFile(scaleImgFile, imgPathFile+dstName+".png")
 		} else if imgType == global.APP_IMG {
 			if screenType == global.Vertical_screen {
 				scaleImgFile := imgPathFile + dstName + "192" + ".png"
@@ -66,13 +68,14 @@ func (s *UpgradeService) UploadUpgradeFile(header *multipart.FileHeader, id, img
 			if err = utils.ImgJpgScale(filePath, scaleImgFile, 512, 512); err != nil {
 				return err, nil
 			}
-			imgInfo.Url = "/img/" + id + "/" + dstName + global.BIG_ICON + ".jpg"
+			//imgInfo.Url = "/img/" + id + "/" + dstName + global.BIG_ICON + ".jpg"
 
 			scaleImgFile = imgPathFile + dstName + global.SMALL_ICON + ".jpg"
 			if err = utils.ImgJpgScale(filePath, scaleImgFile, 192, 192); err != nil {
 				return err, nil
 			}
-			imgInfo.Url = "/img/" + id + "/" + dstName + global.SMALL_ICON + ".jpg"
+			imgInfo.Url = "/img/" + id + "/" + dstName + ".jpg"
+			utils.CopyFile(filePath, imgPathFile+dstName+".jpg")
 		} else if imgType == global.APP_IMG {
 			if screenType == global.Vertical_screen {
 				scaleImgFile := imgPathFile + dstName + "192" + ".jpg"
@@ -89,6 +92,7 @@ func (s *UpgradeService) UploadUpgradeFile(header *multipart.FileHeader, id, img
 			}
 		}
 	}
-
+	fmt.Println("----------", global.GVA_CONFIG.Local.ImgUrl)
+	imgInfo.Url = global.GVA_CONFIG.Local.ImgUrl + imgInfo.Url
 	return nil, imgInfo
 }

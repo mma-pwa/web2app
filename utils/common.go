@@ -9,6 +9,7 @@ import (
 	"image"
 	"image/jpeg"
 	"image/png"
+	"io"
 	"math/rand"
 	"net"
 	"os"
@@ -18,6 +19,36 @@ import (
 	"time"
 	"web2app/global"
 )
+
+func CopyFile(src, dst string) (err error) {
+	// 打开源文件
+	in, err := os.Open(src)
+	if err != nil {
+		return
+	}
+	defer in.Close()
+
+	// 创建目标文件
+	out, err := os.Create(dst)
+	if err != nil {
+		return
+	}
+	defer out.Close()
+
+	// 执行复制操作
+	_, err = io.Copy(out, in)
+	if err != nil {
+		return
+	}
+
+	// 关闭文件可能会产生错误
+	err = out.Close()
+	if err != nil {
+		return
+	}
+
+	return
+}
 
 func Base64Decode(str string) string {
 	//var dst []byte

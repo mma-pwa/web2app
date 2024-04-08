@@ -131,12 +131,12 @@ func (appApi *AppApi) GetTemplateImg(c *gin.Context) {
 		ImgUrl string `json:"img_url"`
 	}
 	imgList := make([]TempImg, 0)
-	imgList = append(imgList, TempImg{Id: 1, ImgUrl: "/img/template/img1.png"})
-	imgList = append(imgList, TempImg{Id: 2, ImgUrl: "/img/template/img2.png"})
-	imgList = append(imgList, TempImg{Id: 3, ImgUrl: "/img/template/img2.png"})
-	imgList = append(imgList, TempImg{Id: 4, ImgUrl: "/img/template/img2.png"})
-	imgList = append(imgList, TempImg{Id: 5, ImgUrl: "/img/template/img2.png"})
-	imgList = append(imgList, TempImg{Id: 6, ImgUrl: "/img/template/img2.png"})
+	imgList = append(imgList, TempImg{Id: 1, ImgUrl: "https://img.quicka2b.com/m1.png"})
+	//imgList = append(imgList, TempImg{Id: 2, ImgUrl: "/img/template/img2.png"})
+	//imgList = append(imgList, TempImg{Id: 3, ImgUrl: "/img/template/img2.png"})
+	//imgList = append(imgList, TempImg{Id: 4, ImgUrl: "/img/template/img2.png"})
+	//imgList = append(imgList, TempImg{Id: 5, ImgUrl: "/img/template/img2.png"})
+	//imgList = append(imgList, TempImg{Id: 6, ImgUrl: "/img/template/img2.png"})
 	response.OkWithDetailed(imgList, "success", c)
 }
 
