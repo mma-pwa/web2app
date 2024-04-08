@@ -39,25 +39,32 @@ func (s *UpgradeService) UploadUpgradeFile(header *multipart.FileHeader, id, img
 				return err, nil
 			}
 			imgInfo.Url = "/img/" + id + "/" + dstName + global.BIG_ICON + ".png"
-
+			imgInfo.Width = 512
+			imgInfo.Height = 512
 			scaleImgFile = imgPathFile + dstName + global.SMALL_ICON + ".png"
 			if err = utils.ImgScale(filePath, scaleImgFile, 192, 192); err != nil {
 				return err, nil
 			}
 			imgInfo.Url = "/img/" + id + "/" + dstName + global.SMALL_ICON + ".png"
+			imgInfo.Width = 192
+			imgInfo.Height = 192
 		} else if imgType == global.APP_IMG {
 			if screenType == global.Vertical_screen {
-				scaleImgFile := imgPathFile + dstName + "192" + ".png"
+				scaleImgFile := imgPathFile + dstName + "526x296" + ".png"
 				if err = utils.ImgScale(filePath, scaleImgFile, 526, 296); err != nil {
 					return err, nil
 				}
 				imgInfo.Url = "/img/" + id + "/" + dstName + "526x296" + ".png"
+				imgInfo.Width = 526
+				imgInfo.Height = 296
 			} else if screenType == global.Landscape_screen {
-				scaleImgFile := imgPathFile + dstName + "192" + ".png"
+				scaleImgFile := imgPathFile + dstName + "144x266" + ".png"
 				if err = utils.ImgScale(filePath, scaleImgFile, 144, 266); err != nil {
 					return err, nil
 				}
 				imgInfo.Url = "/img/" + id + "/" + dstName + "144x266" + ".png"
+				imgInfo.Width = 144
+				imgInfo.Height = 266
 			}
 		}
 	} else if utils.IsJpgImage(filePath) {
@@ -75,13 +82,13 @@ func (s *UpgradeService) UploadUpgradeFile(header *multipart.FileHeader, id, img
 			imgInfo.Url = "/img/" + id + "/" + dstName + global.SMALL_ICON + ".jpg"
 		} else if imgType == global.APP_IMG {
 			if screenType == global.Vertical_screen {
-				scaleImgFile := imgPathFile + dstName + "192" + ".jpg"
+				scaleImgFile := imgPathFile + dstName + "526x296" + ".jpg"
 				if err = utils.ImgJpgScale(filePath, scaleImgFile, 526, 296); err != nil {
 					return err, nil
 				}
 				imgInfo.Url = "/img/" + id + "/" + dstName + "526x296" + ".jpg"
 			} else if screenType == global.Landscape_screen {
-				scaleImgFile := imgPathFile + dstName + "192" + ".jpg"
+				scaleImgFile := imgPathFile + dstName + "144x266" + ".jpg"
 				if err = utils.ImgJpgScale(filePath, scaleImgFile, 144, 266); err != nil {
 					return err, nil
 				}

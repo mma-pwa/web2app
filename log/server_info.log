@@ -408,3 +408,56 @@
 [app]2024/04/06 - 23:23:28.567	[34minfo[0m	D:/mycode/web2app/initialize/router.go:32	use middleware logger
 [app]2024/04/06 - 23:23:28.625	[34minfo[0m	D:/mycode/web2app/initialize/router.go:33	use middleware cors
 [app]2024/04/06 - 23:23:28.637	[34minfo[0m	D:/mycode/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 20:37:02.950	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 20:37:02.967	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 20:37:02.969	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 20:39:13.116	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 20:39:13.130	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 20:39:13.133	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 20:41:44.477	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 20:41:44.496	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 20:41:47.716	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 20:42:06.451	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 20:42:06.465	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 20:42:21.883	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 20:42:21.902	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 20:42:25.324	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 20:46:00.506	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 20:46:00.518	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 20:47:17.102	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 20:48:01.556	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 20:48:01.567	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 20:48:11.294	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 22:34:19.764	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 22:34:19.780	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 22:34:19.787	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 23:33:14.637	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 23:33:14.689	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 23:33:14.705	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/07 - 23:34:57.217	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/07 - 23:34:57.232	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/07 - 23:34:57.247	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:02:42.158	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:02:42.177	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:02:42.184	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:04:35.381	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:04:35.399	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:04:35.404	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:05:32.724	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:05:32.740	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:05:32.749	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:06:06.374	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:06:06.391	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:06:06.408	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:06:55.277	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:06:55.292	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:06:55.294	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:07:30.586	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:07:30.602	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:07:30.605	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:50:34.736	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:50:34.753	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:50:34.756	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 00:51:19.518	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 00:51:19.531	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 00:51:19.537	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}

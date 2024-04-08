@@ -13,6 +13,6 @@ func (r *DomainApiRoute) InitDomainApiRoute(Router *gin.RouterGroup) {
 	domainRouter := Router.Group("domain")
 	domainRouterApi := v1.ApiGroupApp.DomainApiGroup.DomainApi
 	{
-		domainRouter.POST("list", domainRouterApi.GetDomainList)
+		domainRouter.GET("list", domainRouterApi.GetDomainList)
 	}
 }
