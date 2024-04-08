@@ -2,7 +2,6 @@ package utils
 
 import (
 	"encoding/base64"
-	"errors"
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/image/draw"
@@ -214,7 +213,7 @@ func ImgScale(sourceImg, dstImg string, width, height int) error {
 	// 计算缩放后的尺寸
 	bounds := srcImg.Bounds()
 	if bounds.Max.X <= 512 || bounds.Max.Y <= 512 {
-		return errors.New("上传的图片大小必须大于或者等于512X512")
+		//return errors.New("上传的图片大小必须大于或者等于512X512")
 	}
 	// 创建一个新的图层用于缩放
 	m := image.NewRGBA(image.Rect(0, 0, width, height))

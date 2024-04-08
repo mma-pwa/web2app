@@ -1,6 +1,7 @@
 package client
 
 import (
+	"errors"
 	"time"
 	"web2app/global"
 	"web2app/model"
@@ -18,6 +19,9 @@ func NewAppCustomURLService() *AppCustomURLService {
 func (s *AppCustomURLService) CreateAppCustomURL(appCustom model.AppCustomURL) error {
 	appCustom.CreatedAt = time.Now()
 	appCustom.UpdatedAt = time.Now()
+	if appCustom.DomainPrefix == "." || appCustom.DomainPrefix == "@" {
+		return errors.New("domain prefix error")
+	}
 	return global.GVA_DB.Create(&appCustom).Error
 }
 func (s *AppCustomURLService) DeleteAppCustomURL(appCustom model.AppCustomURL) error {
@@ -41,7 +45,7 @@ func (s *AppCustomURLService) GetAppCustomList(info request.AppCustomURLSearch) 
 	if info.UserId != "" {
 		db = db.Where("a.user_id = ?", info.UserId)
 	}
-	err = db.Table(model.TableNameAppCustomURL).Select("app_custom_url.id,app_custom_url.custom_url,app_custom_url.status,app_custom_url.created_at,"+
+	err = db.Table(model.TableNameAppCustomURL).Select("app_custom_url.id,app_custom_url.domain_prefix,app_custom_url.custom_url,app_custom_url.status,app_custom_url.created_at,"+
 		"app_custom_url.updated_at, app_custom_url.app_id,a.name").
 		Joins("left join app as a on a.id=app_custom_url.app_id ", info.UserId).Scan(&appList).Limit(limit).Offset(offset).Error
 	//err = db.Limit(limit).Offset(offset).Order("updated_at desc").Find(&appList).Error

@@ -19,7 +19,7 @@ func (*Uploads) UploadFile(file *multipart.FileHeader, filePath string) (string,
 	// 读取文件后缀
 	ext := path.Ext(file.Filename)
 	if ext != ".png" {
-		return "", "", errors.New("文件后缀名必须是png")
+		//return "", "", errors.New("文件后缀名必须是png")
 	}
 	//// 读取文件名并加密
 	name := strings.TrimSuffix(file.Filename, ext)
