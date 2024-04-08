@@ -15,5 +15,6 @@
 # vendor/
 ti
 log
-log/
+log/*
 bin
+.idea/
