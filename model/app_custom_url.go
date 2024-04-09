@@ -28,6 +28,7 @@ type AppCustomURLRes struct {
 	Status       int32          `gorm:"column:status;not null;comment:Url当前状态，0为正常，1为关闭" json:"status"` // Url当前状态，0为正常，1为关闭
 	Name         string         `gorm:"name" json:"name"`
 	DomainPrefix string         `json:"domain_prefix" gorm:"column:domain_prefix;not null"`
+	ChannelLink  string         `json:"channel_link"`
 }
 
 func (*AppCustomURL) TableName() string {

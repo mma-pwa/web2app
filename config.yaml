@@ -27,8 +27,7 @@ captcha:
   img-width: 240
   img-height: 80
 local:
-  uploadPath: './uploads/file'
-  img_url: 'http://127.0.0.1:8888'
+  uploadPath: 'd:\\uploads/file'
 mysql:
   path: rm-dj1qv3mv3z0a2i53nlo.mysql.rds.aliyuncs.com
   port: "3306"

@@ -1,0 +1,3 @@
+[app]2024/04/09 - 21:15:23.800	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/09 - 21:15:23.813	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/09 - 21:15:23.825	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}

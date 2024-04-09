@@ -52,7 +52,9 @@ func (s *AppCustomURLService) GetAppCustomList(info request.AppCustomURLSearch) 
 		Joins("left join app as a on a.id=app_custom_url.app_id ", info.UserId).Scan(&appList).Limit(limit).Offset(offset).Error
 	//err = db.Limit(limit).Offset(offset).Order("updated_at desc").Find(&appList).Error
 	for _, v := range appList {
+		v.ChannelLink = "https://" + v.CustomURL + "/download/index.html"
 		v.CustomURL = strings.Replace(v.CustomURL, v.DomainPrefix+".", "", 1)
+
 	}
 	return err, appList, total
 }
