@@ -1,7 +1,8 @@
 package config
 
 type Local struct {
-	UploadPath string `json:"uploadPath" yaml:"uploadPath"`
+	UploadPath string `mapstructure:"uploadPath" json:"uploadPath" yaml:"uploadPath"`
+	ImgUrl     string `mapstructure:"img_url" json:"img_url" yaml:"img_url"`
 }
 
 type Server struct {

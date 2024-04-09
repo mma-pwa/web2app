@@ -2,12 +2,14 @@ package utils
 
 import (
 	"encoding/base64"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/image/draw"
 	"image"
 	"image/jpeg"
 	"image/png"
+	"io"
 	"math/rand"
 	"net"
 	"os"
@@ -17,6 +19,54 @@ import (
 	"time"
 	"web2app/global"
 )
+
+func CopyFile(src, dst string) (err error) {
+	// 打开源文件
+	in, err := os.Open(src)
+	if err != nil {
+		return
+	}
+	defer in.Close()
+
+	// 创建目标文件
+	out, err := os.Create(dst)
+	if err != nil {
+		return
+	}
+	defer out.Close()
+
+	// 执行复制操作
+	_, err = io.Copy(out, in)
+	if err != nil {
+		return
+	}
+
+	// 关闭文件可能会产生错误
+	err = out.Close()
+	if err != nil {
+		return
+	}
+
+	return
+}
+
+func GetImgWH(imgPath string) (width, height int, format string) {
+	file, err := os.Open(imgPath)
+	if err != nil {
+		fmt.Println("Error opening file:", err)
+		return
+	}
+	defer file.Close()
+	img, format, err := image.Decode(file)
+	if err != nil {
+		fmt.Println("Error decoding image:", err)
+		return
+	}
+
+	// 获取图片尺寸
+	bounds := img.Bounds()
+	return bounds.Max.X, bounds.Max.Y, format
+}
 
 func Base64Decode(str string) string {
 	//var dst []byte

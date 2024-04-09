@@ -32,8 +32,8 @@ const (
 	Landscape_screen = "1" //横屏
 	Vertical_screen  = "0" //竖屏
 
-	BIG_ICON   = "512x512"
-	SMALL_ICON = "192x192"
+	BIG_ICON   = "_512x512"
+	SMALL_ICON = "_192x192"
 
 	//EMAIL_USER   = "fenglei082@gmail.com"
 	//EMAIL_PASSWD = "Doyo1028.."
