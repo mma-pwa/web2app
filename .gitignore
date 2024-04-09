@@ -15,7 +15,7 @@
 # vendor/
 ti
 log
-log/*
+log/*.log
 bin
 .idea/
 uploads
