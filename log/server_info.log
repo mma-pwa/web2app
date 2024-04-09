@@ -461,3 +461,27 @@
 [app]2024/04/08 - 00:51:19.518	[34minfo[0m	D:/web2app/initialize/router.go:32	use middleware logger
 [app]2024/04/08 - 00:51:19.531	[34minfo[0m	D:/web2app/initialize/router.go:33	use middleware cors
 [app]2024/04/08 - 00:51:19.537	[34minfo[0m	D:/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 20:29:17.210	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 20:29:17.211	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 20:29:17.211	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/08 - 22:05:20.852	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/08 - 22:05:20.852	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/08 - 22:05:20.853	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/09 - 09:50:15.568	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/09 - 09:50:15.568	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/09 - 09:50:15.569	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/09 - 10:32:03.143	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/09 - 10:32:03.144	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/09 - 10:32:03.145	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/09 - 11:52:21.704	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/09 - 11:52:21.704	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/09 - 11:52:21.705	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/09 - 12:02:12.585	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/09 - 12:02:12.586	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/09 - 12:02:12.587	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/09 - 12:13:35.973	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/09 - 12:13:35.974	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/09 - 12:13:35.975	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}
+[app]2024/04/09 - 12:28:13.404	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:32	use middleware logger
+[app]2024/04/09 - 12:28:13.405	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/router.go:33	use middleware cors
+[app]2024/04/09 - 12:28:13.406	[34minfo[0m	/Users/saileifeng/GolandProjects/web2app/initialize/server.go:22	server run success on 	{"address": "0.0.0.0:8888"}

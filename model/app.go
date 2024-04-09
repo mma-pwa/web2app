@@ -42,9 +42,10 @@ type App struct {
 	DeletedAt         gorm.DeletedAt `gorm:"column:deleted_at" json:"deleted_at"` // 删除时间
 }
 type ImgInfo struct {
-	Url    string `json:"url"`
-	Width  int    `json:"width"`
-	Height int    `json:"height"`
+	Url     string `json:"url"`
+	Width   int    `json:"width"`
+	Height  int    `json:"height"`
+	ImgType string `json:"img_type"`
 }
 
 type AppRes struct {

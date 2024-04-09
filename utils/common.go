@@ -2,6 +2,7 @@ package utils
 
 import (
 	"encoding/base64"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/image/draw"
@@ -47,6 +48,24 @@ func CopyFile(src, dst string) (err error) {
 	}
 
 	return
+}
+
+func GetImgWH(imgPath string) (width, height int, format string) {
+	file, err := os.Open(imgPath)
+	if err != nil {
+		fmt.Println("Error opening file:", err)
+		return
+	}
+	defer file.Close()
+	img, format, err := image.Decode(file)
+	if err != nil {
+		fmt.Println("Error decoding image:", err)
+		return
+	}
+
+	// 获取图片尺寸
+	bounds := img.Bounds()
+	return bounds.Max.X, bounds.Max.Y, format
 }
 
 func Base64Decode(str string) string {
