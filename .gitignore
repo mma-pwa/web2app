@@ -19,3 +19,4 @@ log/*.log
 bin
 .idea/
 uploads
+web2app
