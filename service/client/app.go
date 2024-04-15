@@ -26,6 +26,7 @@ func (s *AppService) CreateAPP(app model.App) error {
 	app.AppScreen = string(appScreen)
 	app.CreatedAt = time.Now()
 	app.UpdatedAt = time.Now()
+	app.AppURL = "https://" + app.AppURL
 	app.ID = utils.MD5V([]byte(uuid.New().String()))
 	return global.GVA_DB.Create(app).Error
 }
